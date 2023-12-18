@@ -3,4 +3,6 @@ project(RubikCubeProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(RubikCubeProject main.cpp)
+add_executable(RubikCubeProject main.cpp
+        GenericRubikCube.cpp
+        GenericRubikCube.h)
