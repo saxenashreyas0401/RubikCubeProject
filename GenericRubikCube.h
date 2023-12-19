@@ -10,7 +10,7 @@ using namespace std;
 
 class GenericRubikCube {
 public:
-    enum class Face{
+    enum class FACE{
         UP,
         LEFT,
         RIGHT,
@@ -34,7 +34,8 @@ public:
         F, Fp, F2,
         B, Bp, B2
     };
-
+    virtual COLOR getColor(FACE face, unsigned row, unsigned col) const = 0;
+    virtual bool isSolved() const = 0;
 
 
 };
