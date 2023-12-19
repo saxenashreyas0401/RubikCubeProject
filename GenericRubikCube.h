@@ -13,18 +13,18 @@ public:
     enum class FACE{
         UP,
         LEFT,
+        FRONT,
         RIGHT,
         BACK,
-        DOWN,
-        FRONT
+        DOWN
     };
     enum class COLOR{
-        RED,
-        YELLOW,
         WHITE,
         GREEN,
+        RED,
+        BLUE,
         ORANGE,
-        BLUE
+        YELLOW
     };
     enum class MOVE{
         L, Lp, L2,
