@@ -34,9 +34,7 @@ public:
         F, Fp, F2,
         B, Bp, B2
     };
-    virtual bool isSolved() const = 0;
-    void print() const;
-    vector<MOVE> RandomeShuffle(unsigned int times);
+
 
 
 };
