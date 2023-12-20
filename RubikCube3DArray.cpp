@@ -25,7 +25,7 @@ public:
     char cube[6][3][3];
 
     RubikCube3DArray(){
-        for(int i = 0 ; i < 3; i++)
+        for(int i = 0 ; i < 6; i++)
         {
             for(int j = 0; j<3; j++)
             {
