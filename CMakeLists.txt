@@ -8,4 +8,5 @@ add_executable(RubikCubeProject main.cpp
         GenericRubikCube.h
         RubikCube3DArray.cpp
         RubikCube1DArray.cpp
-        DFSSOLVER.h)
+        DFSSOLVER.h
+        IDDFSSOLVER.h)

@@ -19,7 +19,7 @@ private:
         if(k==1)return;
         if(rubiksCube.isSolved())
         {
-            for(auto move:moves)cout<<rubiksCube.getMove(move)<<" ";
+            //for(auto move:moves)cout<<rubiksCube.getMove(move)<<" ";
             k = 1;
             return;
         }
@@ -29,6 +29,7 @@ private:
             rubiksCube.move(cur_move);
             moves.push_back(cur_move);
             if(depth<max_search_depth)dfs(depth+1);
+            if(k==1)return;
             rubiksCube.invert(cur_move);
             moves.pop_back();
         }
