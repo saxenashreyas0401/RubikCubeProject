@@ -10,4 +10,5 @@ add_executable(RubikCubeProject main.cpp
         RubikCube1DArray.cpp
         DFSSOLVER.h
         IDDFSSOLVER.h
+        IDASTARSOLVER.h
 )
