@@ -1,20 +1,6 @@
 # ninja log v5
 81	2941	7249303933919963	CMakeFiles/RubikCubeProject.dir/RubikCube3DArray.cpp.obj	f2d3a1e3c27f78d7
-4	2716	7250226517283498	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
-160	3062	7247076729218004	CMakeFiles/RubikCubeProject.dir/GenericRubikCube.cpp.obj	acc2a7c8c5f4fa8d
-2716	2846	7250226518539164	RubikCubeProject.exe	3b60967bd7fd7d1
-89	2926	7247796065624867	CMakeFiles/RubikCubeProject.dir/RubikCube1DArray.cpp.obj	36b2aa045642eee3
-4	2609	7250233383441449	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
-2609	2727	7250233384555923	RubikCubeProject.exe	3b60967bd7fd7d1
-4	2645	7250236132601506	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
-2663	2819	7250236134278175	RubikCubeProject.exe	3b60967bd7fd7d1
-4	2718	7250236869434031	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
-2719	2857	7250236870800792	RubikCubeProject.exe	3b60967bd7fd7d1
-4	2710	7250239828552736	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
-2711	2843	7250239829832408	RubikCubeProject.exe	3b60967bd7fd7d1
-5	2741	7250266404442190	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
-2741	2879	7250266405697732	RubikCubeProject.exe	3b60967bd7fd7d1
-4	2708	7250268180647452	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
-2708	2848	7250268181972459	RubikCubeProject.exe	3b60967bd7fd7d1
 4	2704	7250268466773158	CMakeFiles/RubikCubeProject.dir/main.cpp.obj	38b3cb1a0a763e26
+160	3062	7247076729218004	CMakeFiles/RubikCubeProject.dir/GenericRubikCube.cpp.obj	acc2a7c8c5f4fa8d
 2705	2813	7250268467822269	RubikCubeProject.exe	3b60967bd7fd7d1
+89	2926	7247796065624867	CMakeFiles/RubikCubeProject.dir/RubikCube1DArray.cpp.obj	36b2aa045642eee3
