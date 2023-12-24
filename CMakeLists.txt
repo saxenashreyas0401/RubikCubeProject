@@ -11,4 +11,6 @@ add_executable(RubikCubeProject main.cpp
         DFSSOLVER.h
         IDDFSSOLVER.h
         IDASTARSOLVER.h
+        NibbleArray.cpp
+        NibbleArray.h
 )
