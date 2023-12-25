@@ -86,8 +86,11 @@ public:
 
     virtual GenericRubikCube &b2() = 0;
 
+    string getCornerColorString(uint8_t ind) const;
 
+    uint8_t getCornerIndex(uint8_t ind) const;
 
+    uint8_t getCornerOrientation(uint8_t ind) const;
 
 };
 

@@ -38,5 +38,19 @@ void NibbleArray::set(const size_t pos, const uint8_t val) {
     }
 }
 
+uint8_t *NibbleArray::data() {
+    return this->arr.data();
+}
+
+const uint8_t *NibbleArray::data() const {
+    return this->arr.data();
+}
+
+size_t NibbleArray::storageSize() const {
+    return this->arr.size();
+}
+
+
+
 
 

@@ -79,6 +79,30 @@ build CMakeFiles/RubikCubeProject.dir/NibbleArray.cpp.obj: CXX_COMPILER__RubikCu
   OBJECT_DIR = CMakeFiles\RubikCubeProject.dir
   OBJECT_FILE_DIR = CMakeFiles\RubikCubeProject.dir
 
+build CMakeFiles/RubikCubeProject.dir/PatternDatabase.cpp.obj: CXX_COMPILER__RubikCubeProject_unscanned_Debug C$:/Users/Shreyas/CLionProjects/RubikCubeProject/PatternDatabase.cpp || cmake_object_order_depends_target_RubikCubeProject
+  DEP_FILE = CMakeFiles\RubikCubeProject.dir\PatternDatabase.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubikCubeProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubikCubeProject.dir
+
+build CMakeFiles/RubikCubeProject.dir/math.cpp.obj: CXX_COMPILER__RubikCubeProject_unscanned_Debug C$:/Users/Shreyas/CLionProjects/RubikCubeProject/math.cpp || cmake_object_order_depends_target_RubikCubeProject
+  DEP_FILE = CMakeFiles\RubikCubeProject.dir\math.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubikCubeProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubikCubeProject.dir
+
+build CMakeFiles/RubikCubeProject.dir/CornerPatternDatabase.cpp.obj: CXX_COMPILER__RubikCubeProject_unscanned_Debug C$:/Users/Shreyas/CLionProjects/RubikCubeProject/CornerPatternDatabase.cpp || cmake_object_order_depends_target_RubikCubeProject
+  DEP_FILE = CMakeFiles\RubikCubeProject.dir\CornerPatternDatabase.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubikCubeProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubikCubeProject.dir
+
+build CMakeFiles/RubikCubeProject.dir/CornerDBMaker.cpp.obj: CXX_COMPILER__RubikCubeProject_unscanned_Debug C$:/Users/Shreyas/CLionProjects/RubikCubeProject/CornerDBMaker.cpp || cmake_object_order_depends_target_RubikCubeProject
+  DEP_FILE = CMakeFiles\RubikCubeProject.dir\CornerDBMaker.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RubikCubeProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\RubikCubeProject.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target RubikCubeProject
@@ -87,7 +111,7 @@ build CMakeFiles/RubikCubeProject.dir/NibbleArray.cpp.obj: CXX_COMPILER__RubikCu
 #############################################
 # Link the executable RubikCubeProject.exe
 
-build RubikCubeProject.exe: CXX_EXECUTABLE_LINKER__RubikCubeProject_Debug CMakeFiles/RubikCubeProject.dir/main.cpp.obj CMakeFiles/RubikCubeProject.dir/GenericRubikCube.cpp.obj CMakeFiles/RubikCubeProject.dir/RubikCube3DArray.cpp.obj CMakeFiles/RubikCubeProject.dir/RubikCube1DArray.cpp.obj CMakeFiles/RubikCubeProject.dir/NibbleArray.cpp.obj
+build RubikCubeProject.exe: CXX_EXECUTABLE_LINKER__RubikCubeProject_Debug CMakeFiles/RubikCubeProject.dir/main.cpp.obj CMakeFiles/RubikCubeProject.dir/GenericRubikCube.cpp.obj CMakeFiles/RubikCubeProject.dir/RubikCube3DArray.cpp.obj CMakeFiles/RubikCubeProject.dir/RubikCube1DArray.cpp.obj CMakeFiles/RubikCubeProject.dir/NibbleArray.cpp.obj CMakeFiles/RubikCubeProject.dir/PatternDatabase.cpp.obj CMakeFiles/RubikCubeProject.dir/math.cpp.obj CMakeFiles/RubikCubeProject.dir/CornerPatternDatabase.cpp.obj CMakeFiles/RubikCubeProject.dir/CornerDBMaker.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RubikCubeProject.dir

@@ -16,6 +16,12 @@ public:
     uint8_t get(const size_t pos) const;
 
     void set(const size_t pos, const uint8_t val);
+
+    unsigned char *data();
+
+    const unsigned char *data() const;
+
+    size_t storageSize() const;
 };
 
 

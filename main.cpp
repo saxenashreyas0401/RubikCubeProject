@@ -3,16 +3,25 @@
 #include "DFSSOLVER.h"
 #include "IDDFSSOLVER.h"
 #include "IDASTARSOLVER.h"
+#include "PatternDatabase.h"
+#include "CornerPatternDatabase.h"
 using namespace std;
 int main() {
     RubikCube3DArray cube;
-    vector<GenericRubikCube::MOVE> shuffle_moves = cube.randomShuffleCube(7);
-    for(auto move:shuffle_moves)cout<<cube.getMove(move)<<" ";
-    cout<<"\n";
+    CornerPatternDatabase cornerDB;
     cube.print();
-    cout<<"\n";
-    IDASTARSOLVER<RubikCube3DArray,Hash3d> idastarsolver(cube);
-    vector<GenericRubikCube::MOVE> solving_moves = idastarsolver.solve();
-    for(auto move:solving_moves)cout<<cube.getMove(move)<<" ";
+    cout << (int)cornerDB.getNumMoves(cube) << "\n";
+//
+//    cornerDB.setNumMoves(cube, 5);
+//
+//    cout << (int)cornerDB.getNumMoves(cube) << "\n";
+//
+//    cube.randomShuffleCube(1);
+//    cube.print();
+//    cout << (int)cornerDB.getNumMoves(cube) << "\n";
+//
+//    cornerDB.setNumMoves(cube, 6);
+//
+//    cout << (int)cornerDB.getNumMoves(cube) << "\n";
     return 0;
 }

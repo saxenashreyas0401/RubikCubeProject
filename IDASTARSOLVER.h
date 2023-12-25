@@ -6,10 +6,12 @@
 #define RUBIKCUBEPROJECT_IDASTARSOLVER_H
 #include<bits/stdc++.h>
 #include "GenericRubikCube.h"
-
+#include "PatternDatabase.h"
+#include "CornerPatternDatabase.h"
 template<typename T, typename H>
 class IDASTARSOLVER{
 private:
+    CornerPatternDatabase cornerDB;
     unordered_map<T, int, H> vis;
     unordered_map<T, GenericRubikCube::MOVE, H> previous_move;
     vector<GenericRubikCube::MOVE> moves;
@@ -38,7 +40,7 @@ private:
     pair<T,int> IDAstar(int bound)
     {
         priority_queue<pair<Node,int>, vector<pair<Node,int>>, compare> pq;
-        auto start = Node(rubiksCube,0,0);
+        auto start = Node(rubiksCube,0,cornerDB.getNumMoves(rubiksCube));
         pq.push({start,0});
         int next_bound = 100;
         while(!pq.empty())
@@ -57,7 +59,7 @@ private:
                 cur_node.cube.move(cur_move);
                 if(!vis[cur_node.cube])
                 {
-                    cur_node.estimate = 0;
+                    cur_node.estimate = cornerDB.getNumMoves(cur_node.cube);
                     if(cur_node.depth+cur_node.estimate>bound)
                     {
                         next_bound = min(next_bound,cur_node.depth+cur_node.estimate);

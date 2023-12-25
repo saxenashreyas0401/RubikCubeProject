@@ -13,4 +13,13 @@ add_executable(RubikCubeProject main.cpp
         IDASTARSOLVER.h
         NibbleArray.cpp
         NibbleArray.h
+        PatternDatabase.cpp
+        PatternDatabase.h
+        math.cpp
+        math.h
+        PermutationIndexer.h
+        CornerPatternDatabase.cpp
+        CornerPatternDatabase.h
+        CornerDBMaker.cpp
+        CornerDBMaker.h
 )
