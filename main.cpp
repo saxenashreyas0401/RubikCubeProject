@@ -9,7 +9,7 @@ int main() {
     //CornerDBMaker dbMaker(fileName, 0x99);
     //dbMaker.bfsAndStore();
     RubiksCubeBitboard cube;
-    vector<GenericRubikCube::MOVE> shffule_moves = cube.randomShuffleCube(11);
+    vector<GenericRubikCube::MOVE> shffule_moves = cube.randomShuffleCube(9);
     for(auto move:shffule_moves)cout<<cube.getMove(move)<<" ";
     cout<<"\n";
     cube.print();
