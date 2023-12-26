@@ -1,27 +1,20 @@
 #include <bits/stdc++.h>
-#include "RubikCube3DArray.cpp"
-#include "DFSSOLVER.h"
-#include "IDDFSSOLVER.h"
+//#include "RubikCubeBitboard.cpp"
 #include "IDASTARSOLVER.h"
-#include "PatternDatabase.h"
 #include "CornerPatternDatabase.h"
+#include "CornerDBMaker.h"
 using namespace std;
 int main() {
-    RubikCube3DArray cube;
-    CornerPatternDatabase cornerDB;
+    string fileName = "C:\\\\Users\\\\Shreyas\\\\CLionProjects\\\\RubikCubeProject\\\\cornerDepth5V2.txt";
+    //CornerDBMaker dbMaker(fileName, 0x99);
+    //dbMaker.bfsAndStore();
+    RubiksCubeBitboard cube;
+    vector<GenericRubikCube::MOVE> shffule_moves = cube.randomShuffleCube(11);
+    for(auto move:shffule_moves)cout<<cube.getMove(move)<<" ";
+    cout<<"\n";
     cube.print();
-    cout << (int)cornerDB.getNumMoves(cube) << "\n";
-//
-//    cornerDB.setNumMoves(cube, 5);
-//
-//    cout << (int)cornerDB.getNumMoves(cube) << "\n";
-//
-//    cube.randomShuffleCube(1);
-//    cube.print();
-//    cout << (int)cornerDB.getNumMoves(cube) << "\n";
-//
-//    cornerDB.setNumMoves(cube, 6);
-//
-//    cout << (int)cornerDB.getNumMoves(cube) << "\n";
+    IDASTARSOLVER<RubiksCubeBitboard,HashBitboard> idastarsolver(cube, fileName);
+    vector<GenericRubikCube::MOVE> solving_moves = idastarsolver.solve();
+    for(auto move:solving_moves)cout<<cube.getMove(move)<<" ";
     return 0;
 }

@@ -1,12 +1,11 @@
 //
-// Created by Shreyas on 25-12-2023.
+// Created by Shreyas on 26-12-2023.
 //
 
 #ifndef RUBIKCUBEPROJECT_CORNERDBMAKER_H
 #define RUBIKCUBEPROJECT_CORNERDBMAKER_H
 #include "CornerPatternDatabase.h"
-#include "RubikCube3DArray.cpp"
-using namespace std;
+#include "RubikCubeBitboard.cpp"
 class CornerDBMaker {
 private:
     string fileName;
@@ -17,7 +16,6 @@ public:
     CornerDBMaker(string _fileName, uint8_t init_val);
 
     bool bfsAndStore();
-
 };
 
 

@@ -13,13 +13,14 @@ class PatternDatabase {
     size_t numItems;
 
     PatternDatabase();
-
 public:
     PatternDatabase(const size_t size);
 //    Testing for init_val
     PatternDatabase(const size_t size, uint8_t init_val);
 
     virtual uint32_t getDatabaseIndex(const GenericRubikCube &cube) const = 0;
+
+    virtual bool setNumMoves(const GenericRubikCube &cube, const uint8_t numMoves);
 
     virtual bool setNumMoves(const uint32_t ind, const uint8_t numMoves);
 
@@ -37,7 +38,6 @@ public:
 
     virtual bool fromFile(const string &filePath);
 
-    virtual bool setNumMoves(const GenericRubikCube &cube, const uint8_t numMoves);
 };
 
 

@@ -18,6 +18,7 @@ add_executable(RubikCubeProject main.cpp
         math.cpp
         math.h
         PermutationIndexer.h
+        RubikCubeBitboard.cpp
         CornerPatternDatabase.cpp
         CornerPatternDatabase.h
         CornerDBMaker.cpp

@@ -6,7 +6,6 @@
 #define RUBIKCUBEPROJECT_IDASTARSOLVER_H
 #include<bits/stdc++.h>
 #include "GenericRubikCube.h"
-#include "PatternDatabase.h"
 #include "CornerPatternDatabase.h"
 template<typename T, typename H>
 class IDASTARSOLVER{
@@ -77,9 +76,10 @@ private:
 
 public:
     T rubiksCube;
-    IDASTARSOLVER(T rc)
+    IDASTARSOLVER(T rc, string fileName)
     {
         rubiksCube = rc;
+        cornerDB.fromFile(fileName);
     }
     vector<GenericRubikCube::MOVE> solve(){
         int bound = 1;
